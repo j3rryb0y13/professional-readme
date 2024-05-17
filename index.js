@@ -2,9 +2,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./develop/utils/generateMarkdown');
-const { type } = require('os');
-const { default: Choice } = require('inquirer/lib/objects/choice');
-const { default: Choices } = require('inquirer/lib/objects/choices');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -20,33 +17,33 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'installatioin',
+    name: 'installation',
     message: 'Please provide installation instructions'
   },
   {
     type: 'input',
     name: 'usage',
-    message: 'Please provide usuage information'
+    message: 'Please provide usage information'
   },
   {
     type: 'input',
-    name: 'contributing'
-    message: 'Please provide contributiion guideline'
+    name: 'contributing',
+    message: 'Please provide contribution guidelines'
   },
   {
     type: 'input',
-    name: 'tests'
+    name: 'tests',
     message: 'Please provide test instructions'
   },
   {
-    type: 'input',
-    name: 'license'
-    message: 'Please choose a license for your project'
-    Choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None']
+    type: 'list',
+    name: 'license',
+    message: 'Please choose a license for your project',
+    choices: ['MIT', 'Apache 2.0', 'None']
   },
   {
     type: 'input',
-    name: 'github'
+    name: 'github',
     message: 'What is your GitHub username?'
   },
   {
