@@ -37,3 +37,8 @@ lkdsajflkajsd
 
 ## Questions
 For questions about the project, please contact [lkfjasdlfa](https://github.com/lkfjasdlfa) at jldksjaf.
+
+
+## Video
+
+[Video of the creator useing the app](link here)
